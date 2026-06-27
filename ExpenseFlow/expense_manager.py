@@ -1,4 +1,5 @@
 import csv
+import matplotlib.pyplot as plt
 class ExpenseManager:
     def __init__(self):
         self.expenses = []
@@ -28,3 +29,21 @@ class ExpenseManager:
 def total_expense(self):
     total = sum(expense["amount"] for expense in self.expenses)
     print(f"\nTotal Expense: ₹{total}")
+
+  def show_chart(self):
+    if not self.expenses:
+        print("No expenses to display.")
+        return
+
+    categories = []
+    amounts = []
+
+    for expense in self.expenses:
+        categories.append(expense["category"])
+        amounts.append(expense["amount"])
+
+    plt.bar(categories, amounts)
+    plt.xlabel("Category")
+    plt.ylabel("Amount")
+    plt.title("Expense Distribution")
+    plt.show()
