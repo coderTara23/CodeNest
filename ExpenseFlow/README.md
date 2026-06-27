@@ -15,11 +15,14 @@ A smart expense tracker built with Python for managing daily expenses efficientl
 - Matplotlib
 
 ## Project Structure
+
+```bash
 ExpenseFlow/
 ├── README.md
 ├── main.py
 ├── expense_manager.py
 └── requirements.txt
+```
 
 ## Future Improvements
 - Monthly reports
