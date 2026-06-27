@@ -1,17 +1,28 @@
 # ExpenseFlow 💸
 
-An intelligent expense tracker built using Python.
+A smart expense tracker built with Python for managing daily expenses efficiently.
 
 ## Features
-- Add income and expenses
-- Track spending by category
-- Generate monthly reports
-- Data visualization with charts
+- Add expenses
+- View all expenses
+- Calculate total expenses
+- Save data in CSV
+- Expense visualization with charts
 
 ## Tech Stack
 - Python
-- Pandas
+- CSV
 - Matplotlib
 
-## Status
-🚧 In Development
+## Project Structure
+ExpenseFlow/
+├── README.md
+├── main.py
+├── expense_manager.py
+└── requirements.txt
+
+## Future Improvements
+- Monthly reports
+- Category filters
+- Better charts
+- GUI version
