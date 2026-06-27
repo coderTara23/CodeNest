@@ -8,7 +8,8 @@ def main():
         print("1. Add Expense")
         print("2. View Expenses")
         print("3. View Total Expense")
-        print("4. Exit")
+        print("4. Show Chart")
+        print("5. Exit")
 
         choice = input("Enter your choice: ")
 
@@ -24,6 +25,9 @@ def main():
     manager.total_expense()
 
      elif choice == "4":
+    manager.show_chart()
+
+elif choice == "5":
     print("Exiting ExpenseFlow...")
     break
 
