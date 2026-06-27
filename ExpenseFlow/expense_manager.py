@@ -17,10 +17,14 @@ class ExpenseManager:
     print("Expense added successfully and saved!")
 
     def view_expenses(self):
-        if not self.expenses:
-            print("No expenses recorded.")
-            return
+    if not self.expenses:
+        print("No expenses recorded.")
+        return
 
-        print("\nExpenses:")
-        for expense in self.expenses:
-            print(f"Amount: ₹{expense['amount']} | Category: {expense['category']}")
+    print("\nExpenses:")
+    for expense in self.expenses:
+        print(f"Amount: ₹{expense['amount']} | Category: {expense['category']}")
+
+def total_expense(self):
+    total = sum(expense["amount"] for expense in self.expenses)
+    print(f"\nTotal Expense: ₹{total}")
